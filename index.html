@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        fetch("https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/catalogData.json")
+        .then(response => response.json())
+        .then(json => console.log(json));
+ 
+        const items = ['Notebook', 'Display', 'Keyboard', 'Mouse', 'Phones', 'Router', 'USB-camera', 'Gamepad'];
+    const prices = [1000, 200, 20, 10, 25, 30, 18, 24];
+const ids = [1, 2, 3, 4, 5, 6, 7, 8];
+
+        let catalogData = [
+        {
+            id: 1,
+            item: 'Notebook',
+            price: 1000,
+            img: 'https://placehold.it/200x150',
+            imgCart: 'https://placehold.it/100x80'
+        },
+        {
+            id: 2,
+            item: 'Display',
+            price: 200,
+            img: 'https://placehold.it/200x150',
+            imgCart: 'https://placehold.it/100x80'
+        },
+        {
+            id: 3,
+            item: 'Keyboard',
+            price: 20,
+            img: 'https://placehold.it/200x150',
+            imgCart: 'https://placehold.it/100x80'
+        },
+        {
+            id: 4,
+            item: 'Mouse',
+            price: 10,
+            img: 'https://placehold.it/200x150',
+            imgCart: 'https://placehold.it/100x80'
+        },
+        {
+            id: 5,
+            item: 'Phones',
+            price: 25,
+            img: 'https://placehold.it/200x150',
+            imgCart: 'https://placehold.it/100x80'
+        },
+        {
+            id: 6,
+            item: 'Router',
+            price: 30,
+            img: 'https://placehold.it/200x150',
+            imgCart: 'https://placehold.it/100x80'
+        },
+        {
+            id: 7,
+            item: 'USB-camera',
+            price: 18,
+            img: 'https://placehold.it/200x150',
+            imgCart: 'https://placehold.it/100x80'
+        },
+        {
+            id: 8,
+            item: 'Gamepad',
+            price: 24,
+            img: 'https://placehold.it/200x150',
+            imgCart: 'https://placehold.it/100x80'
+        }
+        ]
+
+        let jsonData = JSON.stringify(catalogData);
+        console.log(jsonData);
+    </script>
+</body>
+</html>
